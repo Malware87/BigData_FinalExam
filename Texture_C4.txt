@@ -1,0 +1,24 @@
+1. Div: Phân loại giải đấu.    
+2. Date: Ngày diễn ra trận đấu.
+3. Time: Thời gian diễn ra trận đấu.
+4. HomeTeam: Tên đội chủ nhà.
+5. AwayTeam: Tên đội khách.
+6. FTHG: Số bàn thắng ghi được bởi đội chủ nhà trong thời gian thi đấu chính thức (Full Time).
+7. FTAG: Số bàn thắng ghi được bởi đội khách trong thời gian thi đấu chính thức (Full Time).
+8. FTR: Kết quả của trận đấu sau thời gian thi đấu chính thức (Full Time Result): "H" (đội chủ nhà thắng), "A" (đội khách thắng), hoặc "D" (hòa).
+9. HTHG: Số bàn thắng ghi được bởi đội chủ nhà trong hiệp 1 (Half Time).
+10. HTAG: Số bàn thắng ghi được bởi đội khách trong hiệp 1 (Half Time).
+11. HTR: Kết quả của trận đấu sau hiệp 1 (Half Time Result): "H" (đội chủ nhà thắng), "A" (đội khách thắng), hoặc "D" (hòa).
+12. Referee: Tên trọng tài của trận đấu.
+13. HS: Tổng số cú sút của đội chủ nhà.
+14. AS: Tổng số cú sút của đội khách.
+15. HST: Số cú sút trúng khung thành của đội chủ nhà.
+16. AST: Số cú sút trúng khung thành của đội khách.
+17. HF: Số lần vi phạm của đội chủ nhà.
+18. AF: Số lần vi phạm của đội khách.
+19. HC: Số lần đ corner của đội chủ nhà.
+20. AC: Số lần đ corner của đội khách.
+21. HY: Số thẻ vàng nhận được bởi đội chủ nhà.
+22. AY: Số thẻ vàng nhận được bởi đội khách.
+23. HR: Số thẻ đỏ nhận được bởi đội chủ nhà.
+24. AR: Số thẻ đỏ nhận được bởi đội khách.
