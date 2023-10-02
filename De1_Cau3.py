@@ -44,25 +44,23 @@ print("Chiều cao trung bình của các cầu thủ:", round(avg_height, 2), "
 print("Cầu thủ có chiều cao lớn nhất:", max_height, "cm")
 print("Cầu thủ có chiều cao nhỏ nhất:", min_height, "cm")
 
-# 3.5Tính số lượng cầu thủ tương ứng với từng quốc gia
-so_cau_thu = df.groupBy("nationality").count()
-
+# 3.5 Tính số lượng cầu thủ tương ứng với từng quốc gia
+so_cau_thu = df.groupBy("nationality").count().orderBy("count", ascending = False)
+# decrease
 # Hiển thị kết quả
-print("3.5")
+print("3.5: Liệt kê số lượng cầu thủ tương ứng với từng Quốc Gia?")
 so_cau_thu.show(so_cau_thu.count())
 
-
+#3.6
 # Lọc ra cầu thủ người Brazil
 brazilian_players = df.filter(df["nationality"] == "Brazil")
 
 # Tìm giá trị `value_eur` lớn nhất trong số cầu thủ Brazil
 max_value_eur = brazilian_players.select(
     max(col("value_eur").cast("float"))).collect()[0][0]
-
 # Lọc ra các cầu thủ Brazil có `value_eur` bằng giá trị lớn nhất
 highest_valued_brazilian_players = brazilian_players.filter(
     col("value_eur").cast("float") == max_value_eur)
-
 # Chọn chỉ các cột cần hiển thị
 selected_columns = ["sofifa_id", "player_url", "short_name",
                     "long_name", "age", "dob", "height_cm", "weight_kg", "value_eur"]
